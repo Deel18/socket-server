@@ -8,8 +8,6 @@ const io = require('socket.io')(server);
 
 io.origins(['https://deel-ramverk.me:443']);
 
-app.use(cors());
-
 io.on('connection', socket => {
     console.info("User connected");
     console.info(socket.id)
